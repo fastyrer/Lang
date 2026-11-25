@@ -1,0 +1,53 @@
+{
+  "sample": true,
+  "teacher": {
+    "name": "Имя преподавателя",
+    "bio": "Опыт и методика работы по учебникам.",
+    "languages": ["english", "chinese"]
+  },
+  "supportUrl": "mailto:school@example.org",
+  "privacyUrl": "https://example.org/privacy",
+  "termsUrl": "https://example.org/terms",
+  "cancelHours": 8,
+  "prices": { "group": 3600, "individual": 6400 },
+  "books": [
+    {
+      "id": "english-1",
+      "language": "english",
+      "title": "Название учебника английского",
+      "details": "Уровень и издание учебника."
+    },
+    {
+      "id": "chinese-1",
+      "language": "chinese",
+      "title": "Название учебника китайского",
+      "details": "Уровень и издание учебника."
+    }
+  ],
+  "modules": [
+    {
+      "id": "english-intro",
+      "bookId": "english-1",
+      "language": "english",
+      "title": "Знакомство",
+      "level": "beginner",
+      "chapter": "Глава 1",
+      "outcome": "Представиться и задать три вопроса собеседнику.",
+      "preparation": "Подготовьте три короткие фразы о себе.",
+      "minutes": 20,
+      "open": true
+    },
+    {
+      "id": "chinese-tones",
+      "bookId": "chinese-1",
+      "language": "chinese",
+      "title": "Тоны и пиньинь",
+      "level": "beginner",
+      "chapter": "Глава 1",
+      "outcome": "Отличить четыре тона и прочитать первые слоги.",
+      "preparation": "Возьмите слог ma и произнесите его с четырьмя тонами.",
+      "minutes": 20,
+      "open": true
+    }
+  ]
+}

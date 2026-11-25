@@ -1,0 +1,105 @@
+.hero-actions { gap: .75rem; }
+.hero-actions .button-outline { background: #fff9; }
+.hero-actions .button-outline:hover { background: #eef0ff; }
+
+.program-section { background: #f0f1fc; border-block: 1px solid #e0e2f6; padding-block: clamp(2.8rem, 6vw, 4.3rem); }
+.program-switch { display: flex; gap: .4rem; width: fit-content; max-width: 100%; padding: .32rem; background: #e1e4f9; border-radius: 14px; margin-bottom: 1rem; }
+.program-switch .button { min-height: 39px; padding: .55rem .92rem; color: #45507b; background: transparent; border-radius: 10px; }
+.program-switch .button:hover { color: var(--blue-hover); }
+.program-switch .button[aria-pressed=true] { background: #fff; color: var(--blue-hover); box-shadow: 0 1px 5px #343c7621; }
+.sample-label { font-size: .85rem; margin-bottom: .85rem; }
+.book-block + .book-block { margin-top: 1.5rem; }
+.book-heading { display: flex; align-items: center; gap: .75rem; margin-bottom: 1rem; }
+.book-heading h3 { letter-spacing: -.034em; font-size: 1.2rem; }
+.book-heading p { font-size: .91rem; margin-top: .18rem; }
+.book-heading .option-icon { background: #dedfff; }
+.module-card { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(1rem, 2.3vw, 1.55rem); border-radius: 17px; border: 1px solid #dce0f3; background: #fff; }
+.module-meta { margin: 0 0 .4rem; color: #4356bb; font-weight: 790; font-size: .85rem; line-height: 1.4; }
+.module-card h4 { margin: 0 0 .35rem; font-weight: 850; font-size: 1.3rem; letter-spacing: -.035em; }
+.module-card > p:not(.module-meta) { color: var(--muted); line-height: 1.5; margin-bottom: 1rem; }
+.module-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.module-card .module-actions { margin-top: auto; }
+.teacher-intro { display: flex; align-items: center; gap: clamp(1.1rem, 4vw, 2.3rem); padding: clamp(1.15rem, 3.5vw, 2.5rem); border: 1px solid #e4e3dc; border-radius: 23px; background: #fff; }
+.teacher-mark { display: grid; place-items: center; flex: 0 0 clamp(56px, 11vw, 105px); aspect-ratio: 1; border-radius: 19px; color: #394cc5; background: #eaecff; }
+.teacher-mark img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.teacher-intro h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); letter-spacing: -.06em; }
+.teacher-intro h2 + p { color: var(--muted); line-height: 1.55; margin: .35rem 0 .95rem; max-width: 38rem; }
+.faq-section { max-width: min(1200px, calc(100% - 88px)); }
+.faq-section details { border-top: 1px solid var(--line); padding-block: .85rem; }
+.faq-section details:last-child { border-bottom: 1px solid var(--line); }
+.faq-section summary { font-weight: 770; cursor: pointer; }
+.faq-section details p { color: var(--muted); max-width: 52rem; margin: .65rem 0 .1rem; line-height: 1.62; }
+.module-outcome, .module-prep { padding: .88rem; background: #f0f2ff; border-radius: 12px; }
+.module-prep { background: #f7f7fa; }
+.module-outcome p, .module-prep p { margin-top: .35rem; line-height: 1.55; }
+.module-prep small { display: block; margin-top: .47rem; color: var(--muted); }
+.auth-options { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .45rem .8rem; font-size: .87rem; }
+.dialog-heading h2:focus { outline: none; }
+
+.wide-dialog { width: min(820px, calc(100% - 24px)); }
+.booking-calendar .booking-selects { grid-template-columns: 1fr 1fr 1.15fr; }
+.calendar-layout { display: grid; grid-template-columns: minmax(272px, 1fr) minmax(0, 1.04fr); gap: .85rem; align-items: start; }
+.calendar-panel { padding: .55rem; border: 1px solid #e4e6f2; border-radius: 14px; background: #fafaff; min-width: 0; }
+.calendar-heading { display: grid; grid-template-columns: 38px 1fr 38px; align-items: center; text-align: center; gap: .12rem; padding-bottom: .32rem; }
+.calendar-heading h3 { font-size: .98rem; line-height: 1.3; text-transform: capitalize; }
+.calendar-heading .icon-button { min-height: 36px; height: 36px; width: 38px; }
+.month { width: 100%; border-collapse: separate; border-spacing: 3px; table-layout: fixed; }
+.month th, .month td { text-align: center; padding: 0; height: 35px; }
+.month th { height: 26px; color: var(--muted); font-weight: 750; font-size: .76rem; }
+.calendar-day {
+  display: block; width: 100%; min-width: 25px; min-height: 35px; padding: .2rem 0;
+  border-radius: 8px; border: 1px solid #d5dafd; color: #2b3dae; background: #ebeefe;
+  font-size: .88rem; font-weight: 820;
+}
+.calendar-day[aria-current=date] { border-color: #808ee8; }
+.calendar-day:hover:not(:disabled) { background: #d3daff; }
+.calendar-day[aria-pressed=true], .calendar-day[aria-pressed=true]:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+.calendar-day:disabled { background: transparent; color: #6c7287; border-color: transparent; }
+.calendar-times { padding: .5rem .6rem .6rem; border: 1px solid #e4e6f2; border-radius: 14px; }
+.calendar-times legend { padding-inline: .2rem; margin-bottom: .15rem; text-transform: capitalize; }
+.calendar-slots { display: grid; gap: .4rem; min-height: 78px; max-height: 247px; overflow-y: auto; padding: 4px; margin: -4px; }
+.calendar-slots > p { font-size: .91rem; padding: .6rem .25rem; }
+.calendar-slot { display: flex; align-items: center; gap: .55rem; padding: .56rem; min-height: 53px; border: 1px solid #e4e5ef; border-radius: 9px; cursor: pointer; }
+.calendar-slot:has(:checked) { border-color: #98a5ed; background: #eef0ff; }
+.calendar-slot:has(:disabled) { cursor: default; color: var(--muted); }
+.calendar-slot input { width: 16px; height: 16px; margin: 0; accent-color: var(--blue); flex-shrink: 0; }
+.slot-content { min-width: 0; display: grid; gap: .16rem; }
+.slot-content span, .slot-capacity { font-size: .81rem; color: var(--muted); font-weight: 670; }
+.slot-capacity { margin-left: auto; flex-shrink: 0; white-space: nowrap; }
+.calendar-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .6rem; padding-top: .55rem; border-top: 1px solid #e4e6f2; }
+.calendar-footer span { font-size: .9rem; }
+.calendar-footer svg { margin-right: .2rem; color: var(--blue); }
+
+.cancelled-lessons { margin-top: 1rem; }
+.lesson-module { text-align: left; font-size: .9rem; }
+.progress-card, .next-module, .teacher-slot, .pending-payment { padding: .85rem; border: 1px solid #e1e3f4; border-radius: 13px; }
+.next-module { background: #f0f2ff; margin-bottom: .8rem; }
+.progress-heading, .next-module, .teacher-slot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .65rem; }
+.progress-card .button { margin-top: .6rem; }
+.feedback-text { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); line-height: 1.6; margin-top: .6rem; }
+.pending-payment { background: #f0f2ff; margin-bottom: .85rem; }
+.pending-payment p { margin-bottom: .6rem; }
+.teaching-section-title { margin-block: 1.3rem .65rem; }
+.teacher-slot h3, .progress-card h3, .next-module h3 { font-size: 1.03rem; line-height: 1.3; }
+.teacher-slot p { font-size: .89rem; margin-top: .19rem; }
+.dialog textarea { width: 100%; border: 1px solid #d9dbe4; border-radius: 10px; padding: .55rem .7rem; font: inherit; font-size: 1rem; resize: vertical; }
+input[type=checkbox] { width: 18px; height: 18px; min-height: 18px; margin: 0; accent-color: var(--blue); }
+.check-label { display: flex; gap: .45rem; align-items: center; }
+
+@media (max-width: 1040px) { .faq-section { max-width: none; } }
+@media (max-width: 650px) {
+  .booking-calendar .booking-selects { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .booking-calendar .booking-selects label:last-child { grid-column: 1 / -1; }
+  .calendar-layout { grid-template-columns: minmax(0,1fr); gap: .65rem; }
+  .calendar-slots { max-height: 145px; }
+  .calendar-footer .button { width: 100%; }
+  .teacher-intro { align-items: flex-start; }
+}
+@media (max-width: 400px) {
+  .calendar-panel { padding: .35rem; }
+  .calendar-day { min-height: 31px; }
+  .month td { height: 31px; }
+  .teacher-intro { flex-direction: column; }
+  .teacher-mark { flex-basis: auto; width: 55px; }
+  .teacher-mark svg { width: 29px; }
+}

@@ -1,0 +1,13 @@
+*
+!go.mod
+!cmd/
+!cmd/**
+!web/
+!web/package.json
+!web/package-lock.json
+!web/index.html
+!web/vite.config.js
+!web/src/
+!web/src/**
+!web/public/
+!web/public/**

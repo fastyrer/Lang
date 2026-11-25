@@ -1,0 +1,27 @@
+services:
+  app:
+    ports: !reset []
+    environment:
+      LINGUA_PUBLIC_URL: "https://${LINGUA_DOMAIN:?set a domain in .env}"
+      LINGUA_SECURE_COOKIES: "1"
+      LINGUA_TRUST_PROXY: "1"
+      LINGUA_DEMO_BILLING: "0"
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      LINGUA_DOMAIN: "${LINGUA_DOMAIN}"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - proxy-data:/data
+      - proxy-config:/config
+
+volumes:
+  proxy-data:
+  proxy-config:

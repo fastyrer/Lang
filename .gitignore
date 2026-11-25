@@ -1,0 +1,12 @@
+/data/
+/web/node_modules/
+/web/dist/
+/lingua
+.DS_Store
+/.env
+/compose.override.yaml
+/schedule.json
+/.env.lingua.local
+/school.json
+/secrets/
+/backups/

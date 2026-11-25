@@ -1,0 +1,19 @@
+name: lingua
+
+services:
+  app:
+    build: .
+    init: true
+    env_file:
+      - path: .env.lingua.local
+        required: false
+    restart: unless-stopped
+    ports:
+      - "${LINGUA_HOST:-127.0.0.1}:${LINGUA_PORT:-8081}:8080"
+    environment:
+      LINGUA_SECURE_COOKIES: "${LINGUA_SECURE_COOKIES:-0}"
+    volumes:
+      - lingua-data:/app/data
+
+volumes:
+  lingua-data:
